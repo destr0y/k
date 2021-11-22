@@ -1,0 +1,208 @@
+name: fun-check
+type: process
+emailTemplate: |
+  Hi, {{fullName}}
+
+  We are glad to invite you to take part in a **{{healthCheckType}}** health check: **{{healthCheckTitle}}**.
+
+  We hope it will be useful and informative for you and your team.
+
+  Please pay attention that the health check will be accessible **{{startDate}} to {{endDate}}**.  
+  If you are ready to start the health check, follow the [link]({{healthCheckLink}})  
+  If you are not ready to start it now, do not be shy and follow the link later.  
+
+  Thank you for your participation!
+questions: 
+    # First question
+  - uniqueId: 637eeedf-4cac-4b0d-b9f7-df700ceb0bcc # guid
+    category: Conditional
+    type: singleSelect # singleSelect, multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: If you had to live alone on a deserted island with only one item what would it be?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: e79d50dd-a337-411f-99b7-6af4d0a1c9e8 # guid
+          score: 1.0
+          content: Your favorite novel
+          prompt: some text goes here # optional value
+        - uniqueId: 96e781ee-afe8-4ab8-a5a8-86a67039287d # guid
+          score: 2.0
+          content: A fishing pole
+          prompt: some text goes here # optional value
+        - uniqueId: a4ed63b4-9c74-4114-ac54-e430ce8caa26 # guid
+          score: 3.0
+          content: A fifty-pound bag of rice
+          prompt: some text goes here # optional value
+        - uniqueId: 07b1f9d4-9e60-4e98-97ed-f96715d10f85 # guid
+          score: 3.0
+          content: A box of matches
+          prompt: some text goes here # optional 
+
+    # Second question
+  - uniqueId: eb40a478-1988-406b-9d29-bfbcb5ca5b03 # guid
+    category: Food
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: Which food sounds the most appealing to you?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: f20e4426-4ecd-4e68-81c4-47f28d5bf9ad # guid
+          score: 1.0
+          content: Broccoli Casserole
+          prompt: some text goes here # optional value
+        - uniqueId: 8c82dd03-94a1-43b3-b1ed-cc5002dc3946 # guid
+          score: 2.0
+          content: Scrambled Eggs
+          prompt: some text goes here # optional value
+        - uniqueId: f7a9d4f9-ac95-4924-87ae-198bf7008ac0 # guid
+          score: 3.0
+          content: Potato Chips
+          prompt: some text goes here # optional value
+        - uniqueId: 76947df6-7c01-4852-bde7-780b027b2047 # guid
+          score: 3.0
+          content: Creme Brulee
+          prompt: some text goes here # optional value
+
+  - uniqueId: eb813808-bb95-40a4-868f-52586cc2b87f # guid
+    category: Color
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: What do you think would be the prettiest color-combination?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: f2cafbd8-7a44-42fe-a11a-bf621856e519 # guid
+          score: 1.0
+          content: Blue and Brown
+          prompt: some text goes here # optional value
+        - uniqueId: 9e8ef40e-a1ad-47b0-b3c8-37e31324d82c # guid
+          score: 2.0
+          content: Green and White
+          prompt: some text goes here # optional value
+        - uniqueId: 327703e0-4e5a-4005-9cf2-4e9eb129436a # guid
+          score: 3.0
+          content: Pink and Red
+          prompt: some text goes here # optional value
+        - uniqueId: d33c4ca1-f147-4db3-b1b5-6fdb77f3815c # guid
+          score: 3.0
+          content: Green and Yellow
+          prompt: some text goes here # optional value
+
+  - uniqueId: 0bdbdd34-0d8f-4d86-abaf-88455a4b0df4 # guid
+    category: Clothes
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: What is the item of clothing that you have the most of?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: d9088ede-ad99-453c-9904-a67325d04f08 # guid
+          score: 1.0
+          content: Jackets
+          prompt: some text goes here # optional value
+        - uniqueId: 79ab26be-c113-4291-b982-cd0b80ea619f # guid
+          score: 2.0
+          content: Underwear
+          prompt: some text goes here # optional value
+        - uniqueId: 795ab9b4-f9a0-4b7c-8c03-5f2cc66d1164 # guid
+          score: 3.0
+          content: Shoes
+          prompt: some text goes here # optional value
+        - uniqueId: 9de28e8a-14ce-4593-84b3-e53bca1d5e14 # guid
+          score: 3.0
+          content: Scarves
+          prompt: some text goes here # optional value
+
+  - uniqueId: 1f462213-3185-4ac6-83e0-89c421e82326 # guid
+    category: Animals
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: Which animal do you think is the cutest?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: 74c994c5-7673-40f9-afb9-f6f34384c873 # guid
+          score: 1.0
+          content: Pigs
+          prompt: some text goes here # optional value
+        - uniqueId: a9730539-ec6e-43d7-9811-37c6d639223e # guid
+          score: 2.0
+          content: Dogs
+          prompt: some text goes here # optional value
+        - uniqueId: 65275169-0284-4efa-9720-7a5d9d63b858 # guid
+          score: 3.0
+          content: Koalas
+          prompt: some text goes here # optional value
+        - uniqueId: 73d9edde-04c8-4b29-8e7e-34584832db79 # guid
+          score: 3.0
+          content: Pandas
+          prompt: some text goes here # optional value
+
+  - uniqueId: f80da0d4-f711-4210-a88c-e594863030c5 # guid
+    category: Sport
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: What is your favorite sport?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: e1be7601-496e-4e42-80e8-9f07ca0f5e1a # guid
+          score: 1.0
+          content: Tennis or Soccer
+          prompt: some text goes here # optional value
+        - uniqueId: ea9fe620-c753-4168-abfd-db9ee51ef6aa # guid
+          score: 2.0
+          content: Swimming or Football
+          prompt: some text goes here # optional value
+        - uniqueId: 44b5ce2e-f269-463e-94d0-aed73fc667de # guid
+          score: 3.0
+          content: Lacrosse or Basketball
+          prompt: some text goes here # optional value
+        - uniqueId: 98d2dfff-379b-4cf0-a29a-b2f65af92302 # guid
+          score: 3.0
+          content: Volleyball or Hockey
+          prompt: some text goes here # optional value
+
+  - uniqueId: 0724b5b5-2f30-43a2-9839-a1a88406189b # guid
+    category: Food
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: What is your favorite soda?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: 86aa8bc3-0bd8-481b-87a4-56e2255c4c2d # guid
+          score: 1.0
+          content: Mellow Yellow
+          prompt: some text goes here # optional value
+        - uniqueId: 32dd9bbe-3b48-401a-b76f-c26cb3f29d09 # guid
+          score: 2.0
+          content: Coca-Cola
+          prompt: some text goes here # optional value
+        - uniqueId: f36ed26c-e8aa-4d1f-9eab-e9855fe837b1 # guid
+          score: 3.0
+          content: Diet Pepsi
+          prompt: some text goes here # optional value
+        - uniqueId: df55c638-7e63-4d1c-98f0-969943e27996 # guid
+          score: 3.0
+          content: Orangina
+          prompt: some text goes here # optional value
+
+  - uniqueId: c3508a6f-e161-4175-9ad4-1e131782c33f # guid
+    category: Color
+    type: singleSelect # singleSelect (default), multiSelect, singleLineText, multiLineText
+    isRequired: true # default value is true
+    content: What color is your hair?
+    prompt: some long text # optional field
+    options:
+        - uniqueId: 19708a5d-f187-411b-ae14-f24f7d31b947 # guid
+          score: 1.0
+          content: Dirty Blonde
+          prompt: some text goes here # optional value
+        - uniqueId: c982ed9b-410d-429c-bcc8-98e40103033e # guid
+          score: 2.0
+          content: Red
+          prompt: some text goes here # optional value
+        - uniqueId: 86d8355e-2e38-4641-9be5-95083cf32691 # guid
+          score: 3.0
+          content: Brown
+          prompt: some text goes here # optional value
+        - uniqueId: c9beda58-6f25-4565-9f28-bf46cd94eca6 # guid
+          score: 3.0
+          content: Black
+          prompt: some text goes here # optional value
